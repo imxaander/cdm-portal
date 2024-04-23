@@ -26,10 +26,10 @@
         $result  = mysqli_query($mysqli, "SELECT * FROM accounts WHERE user_name = '$uname' AND password = '$pwd'");
 
 
-        if($result->num_rows === 0){
-            echo "not logged";
-        }else{
+        if($result->num_rows != 0){
             echo "logged in";
+        }else{
+            echo "not logged";
         }
 
     }
