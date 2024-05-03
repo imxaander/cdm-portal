@@ -71,6 +71,7 @@ if($_SESSION["isLoggedIn"] == true){?>
             <h3>>Prof 2</h3>
             <a href="../logout/">Logout</a>
         </body>
+        <script src="scripts/dashboard.js"></script>
     </html>
 <?php }else{
     header("Location:../");
